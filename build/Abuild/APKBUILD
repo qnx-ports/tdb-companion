@@ -2,7 +2,7 @@
 # Maintainer: Felix Xing <fxing@qnx.com>
 pkgname=tdb
 pkgver=1.4.14
-pkgrel=${pkgrel:-0}
+pkgrel=0
 pkgdesc="The tdb library"
 url="https://tdb.samba.org/"
 arch="all"
@@ -49,7 +49,6 @@ _py3() {
     mv "$pkgdir"/usr/lib/python3* "$subpkgdir"/usr/lib/
 }
 
-options="$options ${DISABLE_CHECK:+!check}"
 sha512sums="
 6bc9fe158ff6229d63338e83a6538b6370d82e68039756a8e43fa1afca76cfbfbf182b7cbbf7a3cfab51226b8de15a9fde94af2bb231ba265a83c27a660032eb  tdb-1.4.14.tar.gz
 "
